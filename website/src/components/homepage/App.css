@@ -1,8 +1,50 @@
 .homepage{
-  border: solid yellow;
-  height: 90vh;
+  background-color: #617C7D;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 100px;
+}
+
+.homepage__title{
+  font-size: 20px;
+}
+
+.homepage__image{
+  width: 50%;
+}
+
+.homepage__image__board{
+  position: absolute;
+  top: calc(50vh - 17.5vw);
+  left: 70vw;
+  width: 25vw;
+}
+
+.homepage__image__book{
+  position: absolute;
+  top: 50vh;
+  left: 75vw;
+  width: 17vw;
+}
+
+.homepage__image__laptop{
+  position: absolute;
+  top: calc(50vh - 12.5vw);
+  left: 47vw;
+  width: 25vw;
+}
+
+.homepage__image__mug{
+  position: absolute;
+  top: calc(50vh - 5.5vw);
+  left: 47vw;
+  width: 6vw;
+}
+
+.homepage__image__phone{
+  position: absolute;
+  top: calc(50vh + 1vw);
+  left: 67.5vw;
+  width: 8vw;
 }
