@@ -9,7 +9,8 @@ function Homepage() {
   return (
     <div className="homepage">
       <div className = "homepage__title">
-        <p className = "homepage__title__name">Bryan Noel Salindeho</p>
+        <p className = "homepage__title__first_name">Bryan Noel</p>
+        <p className = "homepage__title__last_name">SALINDEHO</p>
         <p className = "homepage__title__role">SOFTWARE DEVELOPER | REACT, JAVA, SQL</p>
       </div>
       <div className = "homepage__image">

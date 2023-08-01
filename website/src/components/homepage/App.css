@@ -2,11 +2,49 @@
   background-color: #617C7D;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .homepage__title{
+  margin-left: 5vw;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vh;
+}
+
+.homepage__title__first_name{
+  color: #FFFCE1;
+  font-size: 80px;
+  font-family: 'Inter';
+  width: 40vw;
+  margin-bottom: 0px;
+}
+
+.homepage__title__last_name{
+  color: #FFFCE1;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: 'Inter';
+  width: 40vw;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.homepage__title__role{
+  background-color: #444445;
+  color: #DCC1C1;
+  font-size: 20px;
+  font-family: 'Inter';
+  width: 480px;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+}
+
+.homepage__title__headline{
   font-size: 20px;
 }
 
@@ -17,34 +55,34 @@
 .homepage__image__board{
   position: absolute;
   top: calc(50vh - 17.5vw);
-  left: 70vw;
+  left: 73vw;
   width: 25vw;
 }
 
 .homepage__image__book{
   position: absolute;
   top: 50vh;
-  left: 75vw;
+  left: 78vw;
   width: 17vw;
 }
 
 .homepage__image__laptop{
   position: absolute;
   top: calc(50vh - 12.5vw);
-  left: 47vw;
+  left: 50vw;
   width: 25vw;
 }
 
 .homepage__image__mug{
   position: absolute;
   top: calc(50vh - 5.5vw);
-  left: 47vw;
+  left: 50vw;
   width: 6vw;
 }
 
 .homepage__image__phone{
   position: absolute;
   top: calc(50vh + 1vw);
-  left: 67.5vw;
+  left: 70.5vw;
   width: 8vw;
 }
