@@ -1,9 +1,9 @@
 import './App.css';
-import board from '../../images/board.png'
-import book from '../../images/book.png'
-import laptop from '../../images/laptop.png'
-import mug from '../../images/mug.png'
-import phone from '../../images/phone.png'
+import board from '../../images/homepage/board.png'
+import book from '../../images/homepage/book.png'
+import laptop from '../../images/homepage/laptop.png'
+import mug from '../../images/homepage/mug.png'
+import phone from '../../images/homepage/phone.png'
 
 function Homepage() {
   return (
