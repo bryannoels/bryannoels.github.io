@@ -4,6 +4,7 @@ import WorkExperience from './components/workExperience/App';
 import Certificates from './components/certificates/App';
 import Education from './components/education/App';
 import Projects from './components/projects/App';
+import Connect from './components/connect/App';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Certificates/>
       <Education/>
       <Projects/>
+      <Connect/>
     </div>
   );
 }
