@@ -122,3 +122,6 @@
   margin-top: 10%;
   border-radius: 10vw;
 }
+.TOKI_link:link, .TOKI_link:visited {
+  color: black;
+}

@@ -1,4 +1,5 @@
 import './App.css';
+import { workExperienceList } from './constants.js';
 
 function WorkExperience() {
   return (
@@ -22,7 +23,28 @@ function WorkExperience() {
               <div className="search_bar" />
             </div>
           </div>
-          <div className="browser_body"></div>
+          <div className="browser_body">
+            <div className="work_experience_title">WORK EXPERIENCE</div>
+              {workExperienceList.map(experience => (
+                <div className = "experience">
+                  <div className = "experience_header">
+                    <div className = "experience_role">{experience.role}</div>
+                    <div className = "experience_duration">{experience.duration}</div>
+                  </div>
+                  <div className = "experience_type">{experience.type}</div>
+                  <ul className = "experience_description">
+                    {experience.description.map(line =>(
+                      <li>{line}</li>
+                    ))}
+                  </ul>
+                  <div className = "experience_skills">
+                    {experience.skills.map(skill => (
+                      <div className = "experience_skill_button">{skill}</div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+          </div>
         </div>
       </div>
       <div className="laptop_middle"></div>

@@ -35,7 +35,7 @@ function Profile() {
               <div className="achievement_title">ACHIEVEMENT</div>
               <ul className="achievement_list">
                 <li>Top 5% highest rating in Leetcode</li>
-                <li>No. 8 highest rating in Indonesian Competitive Programming Server, <a href = "https://tlx.toki.id">TLX.toki.id</a></li>
+                <li>No. 8 highest rating in Indonesian Competitive Programming Server, <a href = "https://tlx.toki.id/ranking/scores" className="TOKI_link">TLX.toki.id</a></li>
               </ul>
             </div>
           </div>

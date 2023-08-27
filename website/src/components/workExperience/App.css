@@ -99,6 +99,53 @@
 .browser_body{
   background-color: #FFFFFF;
   height: calc(100% - 75px);
+  overflow: scroll;
+}
+.work_experience_title{
+  font-size: 70px;
+  font-weight: 700;
+  color: #444445;
+  text-align: left;
+  margin-left: 50px;
+}
+.experience{
+  margin: 50px;
+}
+.experience_header{
+  display: flex;
+  justify-content: space-between;
+}
+.experience_role{
+  font-size: 24px;
+  font-weight: 700;
+}
+.experience_duration{
+  font-size: 24px;
+  float: right;
+}
+.experience_type{
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: left;
+}
+.experience_description{
+  font-size: 20px;
+  margin-left: -20px;
+  text-align: justify;
+}
+.experience_skills{
+  display: flex;
+  flex-wrap: wrap;
+}
+.experience_skill_button{
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 700;
+  border: solid black;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 30px;
 }
 .laptop_middle{
   display: block;
