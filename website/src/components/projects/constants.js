@@ -144,7 +144,7 @@ export const projectsArray = [
           "Deployed software 'Figma' to design and develop a fully functional software prototype with user flow intact.",
           "Successfully utilised HTML, CSS, and JavaScript to develop a minimum viable product of a web application that integrated with map API."
         ],
-        url: "", // Add relevant URLs here
+        url: "https://drive.google.com/drive/folders/1nN6y0WTjPO2UrU7Dx82YpSScIVOcnTMF", // Add relevant URLs here
         image: bebas, // Replace with actual image reference
       }
 ];
