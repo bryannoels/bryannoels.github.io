@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {relevantModules, cca, competitionUni, highschool, competitionHS} from './constants';
 import './App.css';
 const prevSign = '<';
 const nextSign = '>';
@@ -75,8 +76,8 @@ function Education() {
       <div className="book">
         <div id="cover1" className="cover">
           <div className="front_cover">
-              <div className="front_content">
-                <h1>COVER</h1>
+              <div className="front_cover_content">
+                <h1>EDUCATION</h1>
               </div>
           </div>
           <div className="back_cover">
@@ -87,31 +88,73 @@ function Education() {
         <div id="page12" className="paper">
           <div className="front_page">
             <div className="front_content">
-              <h1>Education</h1>
             </div>
           </div>
           <div className="back_page">
             <div className="back_content">
-              <h1>NTU 1</h1>
+              <div className = "education_name">NANYANG TECHNOLOGICAL UNIVERSITY</div>
+              <div>
+                <div className = "education_description">Bachelor of Engineering (Information Engineering and Media)</div>
+                <div className = "education_description">Honours (Highest Distinction) (Expected)</div>
+              </div>
             </div>
           </div>
         </div>
         <div id="page34" className="paper">
           <div className="front_page">
             <div className="front_content">
-              <h1>NTU 2</h1>
+              <div className = "education_section_title">Relevant modules:</div>
+              <ol>
+              {
+                relevantModules.map(module=>(
+                  <li className = "education_list_item">{module}</li>
+                ))
+              }
+              </ol>
+              <div className = "education_section_title">Co-Curricular Activities:</div>
+              <ol>
+              {
+                cca.map(activity=>(
+                  <li className = "education_list_item">{activity}</li>
+                ))
+              }
+              </ol>
+
+              <div className = "education_section_title">Competitions</div>
+              <ol>
+              {
+                competitionUni.map(item=>(
+                  <li className = "education_list_item">{item}</li>
+                ))
+              }
+              </ol>
+              <div className = "education_item">Research (URECA programme) on Deep Learning and Pattern Recognition in Chess (2023)</div>
             </div>
           </div>
           <div className="back_page">
             <div className="back_content">
-              <h1>Sinlui 1</h1>
+              <div className = "education_name">SMAK St. Louis 1 Surabaya</div>
+              <div>
+                {
+                  highschool.map(item=>(
+                    <div className = "education_description">{item}</div>
+                  ))
+                }
+              </div>
             </div>
           </div>
         </div>
         <div id="page56" className="paper">
           <div className="front_page">
             <div className="front_content">
-              <h1>Sinlui 2</h1>
+            <div className = "education_section_title">National Achievements:</div>
+              <ol>
+                {
+                  competitionHS.map(item=>(
+                    <li className = "education_list_item">{item}</li>
+                  ))
+                }
+              </ol>
             </div>
           </div>
           <div className="back_page">
@@ -127,7 +170,6 @@ function Education() {
           </div>
           <div className="back_cover">
               <div className="back_content">
-                <h1>Cover</h1>
               </div>
           </div>
         </div>
