@@ -1,0 +1,142 @@
+.homepage{
+  background-color: #617C7D;
+  height: 110vh;
+}
+
+.homepage__title{
+  position: absolute;
+  margin-left: 5vw;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 0px;
+  top: 14vw;
+  text-align: center;
+}
+
+.homepage__title__first_name{
+  color: #FFFCE1;
+  font-size: 80px;
+  font-family: 'Inter';
+  width: 40vw;
+  margin-bottom: 0px;
+}
+
+.homepage__title__last_name{
+  color: #FFFCE1;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: 'Inter';
+  width: 500px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.homepage__title__role{
+  background-color: #444445;
+  color: #DCC1C1;
+  font-size: 20px;
+  font-family: 'Inter';
+  width: 70%;
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+}
+
+.homepage__title__headline{
+  font-size: 20px;
+}
+
+.homepage__image{
+  width: 50%;
+}
+
+.homepage__image__board{
+  position: absolute;
+  top: 10vw;
+  left: 73vw;
+  width: 25vw;
+}
+
+.homepage__image__book{
+  position: absolute;
+  top: 28vw;
+  left: 78vw;
+  width: 17vw;
+}
+
+.homepage__image__laptop{
+  position: absolute;
+  top: 15vw;
+  left: 50vw;
+  width: 25vw;
+}
+
+.homepage__image__mug{
+  position: absolute;
+  top: 22vw;
+  left: 50vw;
+  width: 6vw;
+}
+
+.homepage__image__phone{
+  position: absolute;
+  top: 28.5vw;
+  left: 70.5vw;
+  width: 8vw;
+}
+@media only screen and (max-width: 1250px){
+  .homepage__title{
+    top: 55vh;
+    margin-left: 0px;
+    width: 100vw;
+  }
+  .homepage__title__first_name, .homepage__title__last_name{
+    width: 100%;
+  }
+  .homepage__title__role{
+    width: min(70%, 600px);
+  }
+  .homepage__image__board{
+    top: calc(50vh - 28vw);
+    left: 52vw;
+    width: 30vw;
+  }
+  .homepage__image__book{
+    top: calc(50vh - 5vw);
+    left: 60vw;
+    width: 21vw;
+  }
+  
+  .homepage__image__laptop{
+    top: calc(50vh - 20vw);
+    left: 24vw;
+    width: 30vw;
+  }
+  
+  .homepage__image__mug{
+    top: calc(50vh - 12vw);
+    left: 24vw;
+    width: 7.2vw;
+  }
+  
+  .homepage__image__phone{
+    top: calc(50vh - 5vw);
+    left: 50vw;
+    width: 9.6vw;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .homepage__title__first_name, .homepage__title__last_name{
+    font-size: 40px;
+  }
+  .homepage__title__role{
+    font-size: 15px;
+  }
+  .homepage__title__role{
+    width: 350px;
+  }
+}

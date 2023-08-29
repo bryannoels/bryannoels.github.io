@@ -1,0 +1,115 @@
+.connect{
+  background-color: #617C7D;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lets_connect {
+  position: relative;
+  font-size: 100px;
+  font-weight: 700;
+  font-family: 'Verdana';
+  -webkit-text-stroke: 1px #FFFFFF;
+  color: transparent;
+}
+
+.lets_connect::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #FFFFFF;
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 8px solid white;
+  white-space: nowrap;
+}
+
+.lets_connect:hover::before {
+  width: 100%;
+  color: white;
+  filter: drop-shadow(0 0 25px #FFFFFF);
+}
+
+.lets_connect.animation-triggered::before,
+.lets_connect.animation-triggered::after {
+  width: 100%;
+  color: white;
+  filter: drop-shadow(0 0 25px #FFFFFF);
+}
+.connect_buttons{
+  display: flex;
+  margin-top: 2%;
+}
+.connect_buttons > a{
+  text-decoration: none;
+  color: #000000;
+  transition: 0.5s;
+}
+.connect_buttons > a:visited{
+  text-decoration: none;
+  color: #000000;
+}
+.connect_buttons > a:hover{
+  transform: scale(1.1);
+}
+.linkedin_button{
+  background-color: #FFFFFF;
+  width: 240px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 30px;
+  border-radius: 25px;
+}
+.email_button{
+  background-color: #FFFFFF;
+  width: 240px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 30px;
+  border-radius: 25px;
+}
+.github_button{
+  background-color: #FFFFFF;
+  width: 240px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 30px;
+  border-radius: 25px;
+}
+@media screen and (max-width: 1250px){
+  .lets_connect{
+    font-size: 60px;
+  }
+  .connect_buttons > a{
+    width: 180px;
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 700px){
+  .lets_connect{
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .connect_buttons{
+    flex-direction: column;
+  }
+  .connect_buttons > a{
+    width: 240px;
+    margin: 15px;
+  }
+}
