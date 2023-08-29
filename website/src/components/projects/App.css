@@ -134,3 +134,40 @@
 .projects_item_close:hover{
   transform: scale(1.1);
 }
+@media screen and (max-width: 1250px){
+  .projects_item_decription{
+    font-size: 15px;
+  }
+  .projects_item_bottom{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+  .projects_item_close{
+    width: 100px;
+  }
+}
+@media screen and (max-width: 700px){
+  .projects_item_decription{
+    font-size: 15px;
+  }
+  .projects_item_left{
+    display: none;
+  }
+  .projects_item_right{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .projects_item_middle{
+    margin-top: 30px;
+  }
+  .projects_item_bottom{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+  .projects_item_close{
+    width: 100px;
+  }
+}
