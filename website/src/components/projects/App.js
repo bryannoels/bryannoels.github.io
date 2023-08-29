@@ -65,8 +65,6 @@ function Projects() {
           objectPosition: `${objectPositionX}% center`
         }, { duration: 1200, fill: "forwards" });
       });
-
-      console.log("ScrollX:", currentX);
     };
 
     window.addEventListener("wheel", handleWheel);
