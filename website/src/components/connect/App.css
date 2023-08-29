@@ -43,13 +43,21 @@
   display: flex;
   margin-top: 2%;
 }
-.connect_buttons > a, .connect_buttons > a:visited{
+.connect_buttons > a{
+  text-decoration: none;
+  color: #000000;
+  transition: 0.5s;
+}
+.connect_buttons > a:visited{
   text-decoration: none;
   color: #000000;
 }
+.connect_buttons > a:hover{
+  transform: scale(1.1);
+}
 .linkedin_button{
   background-color: #FFFFFF;
-  width: 300px;
+  width: 240px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -61,7 +69,7 @@
 }
 .email_button{
   background-color: #FFFFFF;
-  width: 300px;
+  width: 240px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -73,7 +81,7 @@
 }
 .github_button{
   background-color: #FFFFFF;
-  width: 300px;
+  width: 240px;
   height: 50px;
   display: flex;
   align-items: center;
