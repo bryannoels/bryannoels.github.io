@@ -6,15 +6,26 @@ const nextSign = '>';
 
 function Education() {
   const [page, setPage] = useState(0);
-  const nextPage = () =>{
+  const mid = window.matchMedia("(max-width: 1250px)");
+  const nextPage = () =>{ 
     if(page === 0){
       document.getElementById("cover1").classList.add("flipped");
       document.getElementById("cover1").style.zIndex = "1";
       document.getElementById("page12").classList.add("flipped");
       document.getElementById("page12").style.zIndex = "2";
-      document.querySelector(".book").style.transform = "translateX(250px)";
-      document.querySelector(".prev_button").style.transform = "translateX(-250px)";
-      document.querySelector(".next_button").style.transform = "translateX(250px)";
+      if (mid.matches)
+      {
+        document.querySelector(".book").style.transform = "translateX(150px)";
+        document.querySelector(".prev_button").style.transform = "translateX(-150px)";
+        document.querySelector(".next_button").style.transform = "translateX(150px)";
+      }
+      else
+      {
+        document.querySelector(".book").style.transform = "translateX(250px)";
+        document.querySelector(".prev_button").style.transform = "translateX(-250px)";
+        document.querySelector(".next_button").style.transform = "translateX(250px)";
+      }
+      
       setTimeout(() => {
         document.querySelector(".prev_button").style.visibility = "visible";
       }, 300);
@@ -32,7 +43,10 @@ function Education() {
       document.getElementById("page56").style.zIndex = "4";
       document.getElementById("cover2").classList.add("flipped");
       document.getElementById("cover2").style.zIndex = "5";
-      document.querySelector(".book").style.transform = "translateX(500px)";
+      if (mid.matches)
+        document.querySelector(".book").style.transform = "translateX(300px)";
+      else
+        document.querySelector(".book").style.transform = "translateX(500px)";
       document.querySelector(".prev_button").style.transform = "translateX(0px)";
       document.querySelector(".next_button").style.visibility = "hidden";
       setPage(3);
@@ -44,9 +58,18 @@ function Education() {
       document.getElementById("cover2").style.zIndex = "1";
       document.getElementById("page56").classList.remove("flipped");
       document.getElementById("page56").style.zIndex = "2";
-      document.querySelector(".book").style.transform = "translateX(250px)";
-      document.querySelector(".prev_button").style.transform = "translateX(-250px)";
-      document.querySelector(".next_button").style.transform = "translateX(250px)";
+      if (mid.matches)
+      {
+        document.querySelector(".book").style.transform = "translateX(150px)";
+        document.querySelector(".prev_button").style.transform = "translateX(-150px)";
+        document.querySelector(".next_button").style.transform = "translateX(150px)";
+      }
+      else
+      {
+        document.querySelector(".book").style.transform = "translateX(250px)";
+        document.querySelector(".prev_button").style.transform = "translateX(-250px)";
+        document.querySelector(".next_button").style.transform = "translateX(250px)";
+      }  
       setTimeout(() => {
         document.querySelector(".next_button").style.visibility = "visible";
       }, 300);

@@ -154,3 +154,54 @@
 .prev_button{
   visibility: hidden;
 }
+
+@media screen and (max-width: 1250px){
+  .book{
+    width: 300px;
+    height: 420px;
+    position: relative;
+  }
+  .cover{
+    width: 300px;
+    height: 420px;
+    perspective: 1500px;
+  }
+  .paper{
+    width: 270px;
+    height: 375px;
+    margin-top: 21px;
+    position: absolute;
+    perspective: 1500px;
+  }
+  .front_cover_content{
+    padding: 12px;
+    padding-top: 100px;
+    font-size: 18px;
+  }
+  .education_name{
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  .education_description{
+    font-size: 10px;
+  }
+  .education_section_title{
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: -8px;
+    margin-bottom: -15px;
+    line-height: 15px;
+  }
+  .education_list_item{
+    font-size: 8px;
+    text-align: justify;
+    margin-left: -20px;
+    margin-right: 10px;
+    line-height: 12px;
+  }
+  .education_item{
+    font-size: 8px;
+    line-height: 10px;
+    margin-top: -10px;
+  }
+}
