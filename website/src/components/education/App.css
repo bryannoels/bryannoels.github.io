@@ -7,6 +7,12 @@
   background-color: #617C7D;
   font-family: 'Inter';
 }
+.bigbook{
+  display: flex;
+}
+.smallbook{
+  display: none;
+}
 .book{
   width: 500px;
   height: 700px;
@@ -136,12 +142,39 @@
   z-index: 1;
 }
 
+#cover1s{
+  z-index: 6;
+}
+#page1{
+  z-index: 5;
+}
+#page2{
+  z-index: 4;
+}
+#page3{
+  z-index: 3;
+}
+#page4{
+  z-index: 2;
+}
+#cover2s{
+  z-index: 1;
+}
+
 .flipped .front_page,
 .flipped .back_page,
 .flipped .front_cover,
 .flipped .back_cover{
   transform: rotateY(-180deg);
 }
+
+.flipped2 .front_page,
+.flipped2 .back_page,
+.flipped2 .front_cover,
+.flipped2 .back_cover{
+  transform: rotateY(-180deg);
+}
+
 
 .prev_button, .next_button{
   font-size: 3em;
@@ -153,6 +186,18 @@
 
 .prev_button{
   visibility: hidden;
+}
+
+#pb2, #nb2{
+  font-size: 3em;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  margin: 15px;
+  transition: transform 0.5s;
+}
+#pb2{
+  visibility: hidden;
+  z-index: 10;
 }
 
 @media screen and (max-width: 1250px){
@@ -203,5 +248,15 @@
     font-size: 8px;
     line-height: 10px;
     margin-top: -10px;
+  }
+}
+
+@media screen and (max-width: 700px)
+{
+  .bigbook{
+    display: none;
+  }
+  .smallbook{
+    display: flex;
   }
 }
