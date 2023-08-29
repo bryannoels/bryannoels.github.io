@@ -33,9 +33,15 @@ function Connect() {
       &nbsp;Let's Connect&nbsp;
       </div>
       <div className="connect_buttons">
-        <div className="linkedin_button" />
-        <div className="email_button" />
-        <div className="github_button" />
+        <a className="linkedin_button" href = "https://www.linkedin.com/in/bryannoelsalindeho/" target = "_blank" rel="noreferrer">
+          LinkedIn
+        </a>
+        <a className="email_button" href = "mailto:BSALINDE001@e.ntu.edu.sg" target = "_blank" rel="noreferrer">
+          Email
+        </a>
+        <a className="github_button" href = "https://github.com/bryannoels" target = "_blank" rel="noreferrer">
+          Github
+        </a>
       </div>
     </div>
   );

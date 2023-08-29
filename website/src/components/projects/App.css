@@ -12,8 +12,8 @@
   position: absolute;
   left: 20%;
   top: 20%;
+  padding-right: 20%;
   transition: transform 0.5s ease;
-  
 }
 .project_box{
   background-color: #B2D7DC;
@@ -23,6 +23,10 @@
   padding: 5px;
   margin: 10px;
   border-radius: 10px;
+  transition: 0.5s;
+}
+.project_box:hover{
+  transform: scale(1.1);
 }
 .project_image{
   height: 300px;
