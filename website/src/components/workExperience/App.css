@@ -118,10 +118,12 @@
 .experience_role{
   font-size: 24px;
   font-weight: 700;
+  text-align: left;
 }
 .experience_duration{
   font-size: 24px;
   float: right;
+  text-align: right;
 }
 .experience_type{
   margin-top: 10px;
@@ -196,5 +198,49 @@
   }
   .laptop_bottom{
     display: none;
+  }
+  .work_experience_title{
+    font-size: 50px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+  }
+  .experience_header{
+    flex-direction: column;
+  }
+  .experience_role{
+    font-size: 18px;
+    text-align: center;
+  }
+  .experience_duration{
+    font-size: 15px;
+    text-align: center;
+  }
+  .experience_type{
+    font-size: 15px;
+    text-align: center;
+  }
+  .experience_description{
+    font-size: 12px;
+  }
+  .experience_skills{
+    display: flex;
+    justify-content: center;
+  }
+  .experience_skill_button{
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 700px){
+  .experience_role{
+    font-size: 15px;
+  }
+  .work_experience_title{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: -20px;
   }
 }
