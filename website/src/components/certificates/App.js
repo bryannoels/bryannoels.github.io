@@ -1,8 +1,36 @@
 import './App.css';
-import {sortingOptions, certificatesArray} from './constants.js';
+import { useState } from 'react';
+import {certificatesArray} from './constants.js';
 
 
 function Certificates() {
+  const [data, setData] = useState(certificatesArray);
+  const sortByName = () => {
+    const sorted = [...data].sort((a, b) => a.name.localeCompare(b.name));
+    setData(sorted);
+  }
+
+  const sortByIssuer = () => {
+    const sorted = [...data].sort((a, b) => a.issuer.localeCompare(b.issuer));
+    setData(sorted);
+  }
+
+  const sortByDate = () => {
+    const sorted = [...data].sort((a, b) => {
+      if (typeof a.numericalDate === 'string' && typeof b.numericalDate === 'string') {
+        const dateComparison = b.numericalDate.localeCompare(a.numericalDate);
+        if (dateComparison === 0) {
+          return a.name.localeCompare(b.name);
+        }
+        return dateComparison;
+      } else {
+        return 0; // Don't change order if numericalDate is undefined
+      }
+    });
+    setData(sorted);
+  }
+  
+  
   return (
     <div className="certificates">
       <div className="board">
@@ -11,14 +39,14 @@ function Certificates() {
           <div className="board_sort">
             <div className="board_sort_title">SORT BY:</div>
             <div className="board_sort_options">
-              {sortingOptions.map((option) => (
-                <div key={option} className="board_sort_option">{option}</div>
-              ))}
+              <div className="board_sort_option" onClick = {()=>sortByDate()}>DATE</div>
+              <div className="board_sort_option" onClick = {()=>sortByName()}>NAME</div>
+              <div className="board_sort_option" onClick = {()=>sortByIssuer()}>ISSUER</div>  
             </div>
           </div>
         </div>
         <div className="board_body">
-          {certificatesArray.map((certificate) => (
+          {data.map((certificate) => (
             <div key={certificate.id} className="board_body_items">
               <div className="board_body_certificate_image">
                 <img src={certificate.image} alt={certificate.name} />
