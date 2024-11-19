@@ -7,17 +7,17 @@ const MainPage: React.FC = () => {
   const vheight: number = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
   const vwidth: number = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      console.log(window.scrollY);
-      setOffset(window.scrollY);
-    };
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     console.log(window.scrollY);
+  //     setOffset(window.scrollY);
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   return (
     <div className="main-page">
