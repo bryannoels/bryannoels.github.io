@@ -1,0 +1,88 @@
+.connect-page{
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(0.7vw + 2vmin);
+    color: white;
+    font-family: monaco;
+  }
+  
+  .connect-page-title{
+      font-size: calc(5.5vw + 2vmin);
+      color: white;
+      font-family: 'Arial Rounded MT Bold';
+  }
+  
+  .connect-page-logos{
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .connect-page-logo{
+      font-size: calc(4.2vw + 2vmin);
+      color: white;
+      margin-left: 30px;
+      margin-right: 30px;
+  }
+
+  @media(max-width:900px){
+    .connect-page{
+      min-height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: monaco;
+    }
+  
+    .connect-page-title{
+        font-size: calc(10vw + 2vmin);
+        color: white;
+        font-family: 'Arial Rounded MT Bold';
+    }
+  
+    .connect-page-logos{
+        display: flex;
+        flex-direction: row;
+    }
+  
+    .connect-page-logo{
+        font-size: calc(15vw + 2vmin);
+        color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:500px){
+    .connect-page{
+      min-height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: monaco;
+    }
+  
+    .connect-page-title{
+        font-size: calc(10vw + 2vmin);
+        color: white;
+        font-family: 'Arial Rounded MT Bold';
+    }
+  
+    .connect-page-logos{
+        display: flex;
+        flex-direction: row;
+    }
+  
+    .connect-page-logo{
+        font-size: calc(15vw + 2vmin);
+        color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

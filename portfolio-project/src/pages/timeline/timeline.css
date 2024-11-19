@@ -1,0 +1,229 @@
+.timeline-page{
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin-left: 5vw;
+    width: 90vw;
+    font-family: 'Helvetica';
+    margin-bottom: 5vw;
+  }
+
+  .timeline-page-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10vh;
+    height: 8vw;
+  }
+
+  .timeline-page-header-title{
+    margin-left: 1.4vw;
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: left;
+    width: 45vw;
+    margin-right: 2vw;
+  }
+
+  .timeline-page-header-title-smaller{
+    margin-left: 1.4vw;
+    font-size: 4.2vw;
+    width: 45vw;
+    text-align: left;
+    font-weight: bold;
+    margin-right: 2vw;
+  }
+
+  .timeline-page-header-logo{
+    height: 7.5vw;
+    margin-left: 1.5vw;
+ }
+
+ .timeline-page-header-logo-larger{
+  height: 7.5vw;
+  margin-left: 1.5vw;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 10%;
+}
+
+.timeline-page-component{
+  display: flex;
+  flex-direction: column;
+}
+
+ .timeline-page-component-header{
+    display: flex;
+    flex-direction: row;
+    height: 3vw; 
+ }
+
+ .timeline-page-component-header-title{
+    font-weight: bold;
+    font-size: 2vw;
+ }
+
+ .timeline-page-component-header-date{
+    position: absolute;
+    right: 5vw;
+    width: 20%;
+    color: white;
+    text-align: right;
+    font-size: 2vw;
+ }
+
+ .timeline-page-component-details{
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1.68vw;
+ }
+
+ .timeline-page-header-phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10vh;
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .timeline-page-header-title-phone{
+    font-size: 8vw;
+    text-align: center;
+    font-weight: bold;
+    text-align: left;
+  }
+ 
+
+  @media(max-width:900px){
+
+    .timeline-page{
+      min-height: 0vh;
+      font-size: calc(10px + 2vmin);
+      color: white;
+      margin-left: 5vw;
+      width: 90vw;
+      font-family: 'Helvetica';
+      margin-bottom: 5vw;
+    }
+  
+    .timeline-page-header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 0vh;
+      height: 8vw;
+    }
+  
+    .timeline-page-component-header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+  
+   .timeline-page-component-header-title{
+      font-weight: bold;
+      font-size: 4.5vw;
+      text-align: left;
+      margin-top: 0px;
+      width: 90vw;
+      margin-bottom: 0px;
+   }
+  
+   .timeline-page-component-header-date{
+      position: relative;
+      right: 0vw;
+      width: 90vw;
+      text-align: left;
+      font-size: 3.9vw;
+   }
+  
+   .timeline-page-component-details{
+      text-align: justify;
+      line-height: 1.5;
+      font-size: 3.5vw;
+      margin-top: 10vw;
+      padding-left: 5vw;
+      margin-bottom: 2vh;
+   }
+  
+   .timeline-page-header-logo{
+    height: 15vw;
+    margin-left: 1.5vw;
+    margin-top: 3vw;
+    }
+  
+    .timeline-page-header-logo-larger{
+      margin-top: 3vw;
+      height: 15vw;
+      margin-left: 1.5vw;
+      background-color: rgba(255,255,255,0.5);
+      border-radius: 10%;
+    }
+}
+
+@media(max-width:500px){
+    .timeline-page{
+      min-height: 0vh;
+      font-size: calc(10px + 2vmin);
+      color: white;
+      margin-left: 5vw;
+      width: 90vw;
+      font-family: 'Helvetica';
+      margin-bottom: 5vw;
+    }
+  
+    .timeline-page-header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 0vh;
+      height: 8vw;
+    }
+  
+    .timeline-page-component-header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+  
+   .timeline-page-component-header-title{
+      font-weight: bold;
+      font-size: 4.5vw;
+      text-align: left;
+      margin-top: 0px;
+      width: 90vw;
+      margin-bottom: 0px;
+   }
+  
+   .timeline-page-component-header-date{
+      position: relative;
+      right: 0vw;
+      width: 90vw;
+      text-align: left;
+      font-size: 3.9vw;
+   }
+  
+   .timeline-page-component-details{
+      text-align: justify;
+      line-height: 1.5;
+      font-size: 3.5vw;
+      margin-top: 10vw;
+      padding-left: 5vw;
+      margin-bottom: 2vh;
+   }
+  
+   .timeline-page-header-logo{
+    height: 15vw;
+    margin-left: 1.5vw;
+    margin-top: 3vw;
+    }
+  
+    .timeline-page-header-logo-larger{
+      margin-top: 3vw;
+      height: 15vw;
+      margin-left: 1.5vw;
+      background-color: rgba(255,255,255,0.5);
+      border-radius: 10%;
+    }
+}

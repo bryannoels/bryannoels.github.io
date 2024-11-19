@@ -1,0 +1,27 @@
+.footer-page{
+    min-height: 5vh;
+    font-size: 1.4vw;
+    text-align: center;
+    color: white;
+    font-family: monaco;
+  }
+
+  @media(max-width:900px){
+    .footer-page{
+      min-height: 5vh;
+      font-size: 5vw;
+      text-align: center;
+      color: white;
+      font-family: monaco;
+    }
+  }
+
+  @media(max-width:500px){
+    .footer-page{
+      min-height: 5vh;
+      font-size: 5vw;
+      text-align: center;
+      color: white;
+      font-family: monaco;
+    }
+  }
