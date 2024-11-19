@@ -1,12 +1,13 @@
 .footer-page{
-    min-height: 5vh;
     font-size: 1.4vw;
     text-align: center;
     color: white;
     font-family: monaco;
-    height: 100vh;
-    border: solid red;
-  }
+    height: 10vh;
+    background-color: #000523;
+    display: flex;
+    justify-content: center;
+}
 
   @media(max-width:900px){
     .footer-page{

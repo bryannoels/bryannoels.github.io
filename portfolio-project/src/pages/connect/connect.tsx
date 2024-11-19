@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './connect.css';
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import './connect.css';
 
 const Connect: React.FC = () => {
   const [offset, setOffset] = useState<number>(0);
