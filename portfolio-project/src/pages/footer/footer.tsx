@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
 
   return (
     <div className={offset >= (vwidth > 900 ? 3.1 : 1.68) * vheight ? 'scroll footer-page' : 'noscroll footer-page'}>
-      <p>&#169; Bryan Noel Salindeho 2022</p>
+      <p>&#169; Bryan Noel Salindeho 2024</p>
     </div>
   );
 };
