@@ -1,11 +1,11 @@
 .timeline-page{
-    min-height: 100vh;
+    height: 100vh;
     font-size: calc(10px + 2vmin);
     color: white;
-    margin-left: 5vw;
+    padding: 5vw;
     width: 90vw;
     font-family: 'Helvetica';
-    margin-bottom: 5vw;
+    background-color: #000523;
   }
 
   .timeline-page-header{
@@ -85,6 +85,7 @@
     height: 8vw;
     display: flex;
     justify-content: center;
+    background-color: #000523;
   }
   
   .timeline-page-header-title-phone{

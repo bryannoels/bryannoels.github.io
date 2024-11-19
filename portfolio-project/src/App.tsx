@@ -17,8 +17,8 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <MainPage />
-      {/* {vwidth > 900 ? <Timeline /> : <TimelinePhone />}
-      {vwidth > 900 ? <Projects /> : <ProjectsPhone />} */}
+      {vwidth > 900 ? <Timeline /> : <TimelinePhone />}
+      {vwidth > 900 ? <Projects /> : <ProjectsPhone />}
       <Connect />
       <Footer /> 
     </div>

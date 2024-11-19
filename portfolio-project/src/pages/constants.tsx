@@ -1,5 +1,5 @@
 export function i(image: string): string {
-    return require(`../../public/images/${image}.png`);
+    return `/images/${image}.png`;
   }
 
 export const timeLine = [

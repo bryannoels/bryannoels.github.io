@@ -23,17 +23,15 @@ export default function Timeline() {
   },[]);
   return (
     <div className = "timeline-page">
-      <header>
-          <div className = {offset >= 2/9*vheight ? 'scroll timeline-page-header' : 'timeline-page-header noscroll'}>
-            <p className = { (current.id === "education" || current.id === "leadership") ? 'timeline-page-header-title':'timeline-page-header-title-smaller'}>{current.title}</p>
-            <div>
-                <img src={workExperience} alt ="Work Experience" className = {current.id === 'workExperience' ? "timeline-page-header-logo-larger":"timeline-page-header-logo"} onClick={()=>setCurrent(timeLine[0])} />
-                <img src={education} alt ="Education" className = {current.id === 'education' ? "timeline-page-header-logo-larger":"timeline-page-header-logo"} onClick={()=>setCurrent(timeLine[1])} />
-                <img src={leadership} alt ="Leadership" className = {current.id === 'leadership' ? "timeline-page-header-logo-larger":"timeline-page-header-logo"} onClick={()=>setCurrent(timeLine[2])} />
-                <img src={volunteerActivities} alt ="Volunteer Activities" className = {current.id === 'volunteerActivities' ? "timeline-page-header-logo-larger":"timeline-page-header-logo"} onClick={()=>setCurrent(timeLine[3])} />
-            </div>
+        <div className = {offset >= 2/9*vheight ? 'scroll timeline-page-header' : 'timeline-page-header noscroll'}>
+          <p className = { (current.id === "education" || current.id === "leadership") ? 'timeline-page-header-title':'timeline-page-header-title-smaller'}>{current.title}</p>
+          <div>
+              <img src={workExperience} alt ="Work Experience" className = {current.id === 'workExperience' ? "timeline-page-header-logo-larger":"timeline-page-header-logo"} onClick={()=>setCurrent(timeLine[0])} />
+              <img src={education} alt ="Education" className = {current.id === 'education' ? "timeline-page-header-logo-larger":"timeline-page-header-logo"} onClick={()=>setCurrent(timeLine[1])} />
+              <img src={leadership} alt ="Leadership" className = {current.id === 'leadership' ? "timeline-page-header-logo-larger":"timeline-page-header-logo"} onClick={()=>setCurrent(timeLine[2])} />
+              <img src={volunteerActivities} alt ="Volunteer Activities" className = {current.id === 'volunteerActivities' ? "timeline-page-header-logo-larger":"timeline-page-header-logo"} onClick={()=>setCurrent(timeLine[3])} />
           </div>
-      </header>
+        </div>
       <hr/>
       <TimelineComponent component={current}/>
     </div>
