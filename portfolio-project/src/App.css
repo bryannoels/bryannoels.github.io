@@ -3,6 +3,7 @@
   background-color: #000523;
   width: 100vw;
   height: 100vh;
+  border: solid red;
 }
 
 .App-header {

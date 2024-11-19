@@ -19,8 +19,8 @@ const App: React.FC = () => {
       <MainPage />
       {/* {vwidth > 900 ? <Timeline /> : <TimelinePhone />}
       {vwidth > 900 ? <Projects /> : <ProjectsPhone />}
-      <Connect />
-      <Footer /> */}
+      <Connect /> */}
+      <Footer /> 
     </div>
   );
 }

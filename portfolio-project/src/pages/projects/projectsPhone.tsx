@@ -33,30 +33,28 @@ export default function ProjectsPhone() {
   };
 
   return (
-    <div className="App">
-      <header className={offset >= 1.2 * vheight ? 'scroll projects-page-phone' : 'noscroll projects-page-phone'}>
-        <div className="projects-page-box-phone">
-          <p className="projects-page-title-phone">Projects</p>
-          <Slider {...slickSettings}>
-            {projectsInPhone.map((project, index) => (
-              <div key={index}>
-                <div className="project-cards-phone">
-                  <div className="project-card-phone">
-                    <a href={project.url} target="_blank" rel="noreferrer">
-                      <img src={project.image} alt={project.title} className="project-card-image-phone" />
+    <div className={offset >= 1.2 * vheight ? 'scroll projects-page-phone' : 'noscroll projects-page-phone'}>
+      <div className="projects-page-box-phone">
+        <p className="projects-page-title-phone">Projects</p>
+        <Slider {...slickSettings}>
+          {projectsInPhone.map((project, index) => (
+            <div key={index}>
+              <div className="project-cards-phone">
+                <div className="project-card-phone">
+                  <a href={project.url} target="_blank" rel="noreferrer">
+                    <img src={project.image} alt={project.title} className="project-card-image-phone" />
+                  </a>
+                  <div className="project-card-description-phone">
+                    <a href={project.url} className="project-card-text-phone" target="_blank" rel="noreferrer">
+                      {project.title}
                     </a>
-                    <div className="project-card-description-phone">
-                      <a href={project.url} className="project-card-text-phone" target="_blank" rel="noreferrer">
-                        {project.title}
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>
-            ))}
-          </Slider>
-        </div>
-      </header>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }

@@ -4,6 +4,8 @@
     text-align: center;
     color: white;
     font-family: monaco;
+    height: 100vh;
+    border: solid red;
   }
 
   @media(max-width:900px){
@@ -13,6 +15,7 @@
       text-align: center;
       color: white;
       font-family: monaco;
+      height: 100vh;
     }
   }
 
@@ -23,5 +26,6 @@
       text-align: center;
       color: white;
       font-family: monaco;
+      height: 100vh;
     }
   }

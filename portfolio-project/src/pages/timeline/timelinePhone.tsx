@@ -38,41 +38,39 @@ const TimelinePhone: React.FC = () => {
   }, []);
 
   return (
-    <div className="App">
-      <div className="timeline-page">
-        <header>
-          <div className={offset >= (2 / 9) * vheight ? 'timeline-page-header-phone scroll' : 'timeline-page-header-phone noscroll'}>
-            <p className="timeline-page-header-title-phone">{current.title}</p>
-          </div>
-        </header>
-        <hr />
-        <TimelineComponent component={current} />
-        <div className={offset >= current.offset * vheight ? 'scroll' : 'noscroll'}>
-          <img
-            src={workExperience}
-            alt="Work Experience"
-            className={current.id === 'workExperience' ? 'timeline-page-header-logo-larger' : 'timeline-page-header-logo'}
-            onClick={() => setCurrent(timeLine[0])}
-          />
-          <img
-            src={education}
-            alt="Education"
-            className={current.id === 'education' ? 'timeline-page-header-logo-larger' : 'timeline-page-header-logo'}
-            onClick={() => setCurrent(timeLine[1])}
-          />
-          <img
-            src={leadership}
-            alt="Leadership"
-            className={current.id === 'leadership' ? 'timeline-page-header-logo-larger' : 'timeline-page-header-logo'}
-            onClick={() => setCurrent(timeLine[2])}
-          />
-          <img
-            src={volunteerActivities}
-            alt="Volunteer Activities"
-            className={current.id === 'volunteerActivities' ? 'timeline-page-header-logo-larger' : 'timeline-page-header-logo'}
-            onClick={() => setCurrent(timeLine[3])}
-          />
+    <div className="timeline-page">
+      <header>
+        <div className={offset >= (2 / 9) * vheight ? 'timeline-page-header-phone scroll' : 'timeline-page-header-phone noscroll'}>
+          <p className="timeline-page-header-title-phone">{current.title}</p>
         </div>
+      </header>
+      <hr />
+      <TimelineComponent component={current} />
+      <div className={offset >= current.offset * vheight ? 'scroll' : 'noscroll'}>
+        <img
+          src={workExperience}
+          alt="Work Experience"
+          className={current.id === 'workExperience' ? 'timeline-page-header-logo-larger' : 'timeline-page-header-logo'}
+          onClick={() => setCurrent(timeLine[0])}
+        />
+        <img
+          src={education}
+          alt="Education"
+          className={current.id === 'education' ? 'timeline-page-header-logo-larger' : 'timeline-page-header-logo'}
+          onClick={() => setCurrent(timeLine[1])}
+        />
+        <img
+          src={leadership}
+          alt="Leadership"
+          className={current.id === 'leadership' ? 'timeline-page-header-logo-larger' : 'timeline-page-header-logo'}
+          onClick={() => setCurrent(timeLine[2])}
+        />
+        <img
+          src={volunteerActivities}
+          alt="Volunteer Activities"
+          className={current.id === 'volunteerActivities' ? 'timeline-page-header-logo-larger' : 'timeline-page-header-logo'}
+          onClick={() => setCurrent(timeLine[3])}
+        />
       </div>
     </div>
   );
