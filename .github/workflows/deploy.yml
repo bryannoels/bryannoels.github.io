@@ -28,7 +28,7 @@ jobs:
       - name: Move build output to /docs
         run: |
           rm -rf ./docs
-          mv ./build ./docs
+          mv ./dist ./docs
 
       - name: Commit and push changes
         run: |
