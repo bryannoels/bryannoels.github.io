@@ -1,0 +1,191 @@
+.profile{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  background-color: #617C7D;
+  font-family: 'Inter';
+}
+.profile_left{
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.profile_right{
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ipad_border{
+  background-color: #000000;
+  border-radius: 15px;
+  height: 70%;
+  width: 80%;
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ipad_inside{
+  background-color: #D9D9D9;
+  border-radius: 15px;
+  height: calc(100% - 50px);
+  width: calc(100% - 50px);
+  display: grid;
+  padding: 7.5px;
+  overflow: auto;
+}
+.grid-item{
+  margin: 15px;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 700;
+}
+.photo{
+  background-color: #F3B03D;
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.photo_title{
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.profile_photo{
+  height: 200px;
+}
+.about_me{
+  background-color: #B2D7DC;
+  grid-column: 2;
+  grid-row: 1 / span 3;
+}
+.about_me_title{
+  font-size: 24px;
+  margin-top: 20px;
+}
+.about_me_list{
+  font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+}
+.contact{
+  background-color: #FFFFFF;
+  grid-column: 3;
+  grid-row: 1;
+}
+.contact_title{
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contact_text{
+  font-size: 15px;
+}
+.links{
+  background-color: #000000;
+  color: #FFFFFF;
+  grid-column: 3;
+  grid-row: 2 / span 3;
+  display: flex;
+  flex-direction: column;
+}
+.links_title{
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.links > a{
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 48px;
+}
+.achievement{
+  background-color: #F19D9B;
+  grid-column: 1 / span 2;
+  grid-row: 4;
+}
+.achievement_title{
+  font-size: 24px;
+}
+.achievement_list{
+  font-size: 15px;
+  text-align: left;
+}
+.mug{
+  background-color: #C99E7C;
+  height: 20vw;
+  width: 20vw;
+  margin-top: 10%;
+  border-radius: 10vw;
+}
+.TOKI_link:link, .TOKI_link:visited {
+  color: black;
+}
+@media screen and (max-width: 1250px){
+  .ipad_inside{
+    padding: 0px;
+    justify-items: center;
+  }
+  .grid-item{
+    width: calc(60%);
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 700;
+  }
+  .photo{
+    margin-top: 30px;
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .about_me{
+    grid-row: 2;
+    grid-column: 1; 
+    padding-right: 10px;
+  }
+  .about_me_list{
+    font-size: 15px;
+    line-height: 25px;
+    margin-left: -20px;
+  }
+  .achievement{
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .achievement_title{
+    font-size: 15px;
+  }
+  .achievement_list{
+    font-size: 15px;
+    margin-left: -20px;
+  }
+  .links{
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .contact{
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .contact_title{
+    font-size: 15px;
+  }
+  .contact_text{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 700px){
+  .about_me_list{
+    font-size: 10px;
+  }
+  .achievement_list{
+    font-size: 10px;
+  }
+}
