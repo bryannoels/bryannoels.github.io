@@ -30,7 +30,7 @@ function Connect() {
   return (
     <div className="connect">
       <div className="lets_connect" ref={letsConnectRef} data-text="&nbsp;Let's Connect&nbsp;">
-      Let's Connect
+      &nbsp;Let's Connect&nbsp;
       </div>
       <div className="connect_buttons">
         <a className="linkedin_button" href = "https://www.linkedin.com/in/bryannoelsalindeho/" target = "_blank" rel="noreferrer">
