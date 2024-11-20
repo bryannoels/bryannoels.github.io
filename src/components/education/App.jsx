@@ -100,7 +100,7 @@ function BigBook() {
         <div id="cover1" className="cover">
           <div className="front_cover">
               <div className="front_cover_content">
-                <h1>EDUCATION</h1>
+                <p className="front_cover_title">EDUCATION</p>
               </div>
           </div>
           <div className="back_cover">

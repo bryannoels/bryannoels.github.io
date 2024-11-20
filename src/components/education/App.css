@@ -64,6 +64,7 @@
   backface-visibility: hidden;
   transform-origin: left;
   transition: transform 0.5s;
+  overflow-y: auto;
 }
 .back_page{
   background-color: #FFFFFF;
@@ -84,6 +85,7 @@
   align-items: flex-start;
   text-align: left;
   padding: 20px;
+  overflow-y: auto;
 }
 .front_cover_content{
   width: 90%;
@@ -96,6 +98,10 @@
   padding-top: 150px;
   font-size: 30px;
 }
+.front_cover_title{
+  font-size: 50px;
+  font-weight: 700;
+}
 .back_content{
   width: 100%;
   height: 100%;
@@ -104,6 +110,7 @@
   justify-content: center;
   align-items: center;
   transform: rotateY(180deg);
+  overflow-y: auto;
 }
 .education_name{
   font-size: 24px;
