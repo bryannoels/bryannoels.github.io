@@ -2,10 +2,14 @@ export const relevantModules = ["From Computational Thinking to Programming",
                                 "Object-Oriented Programming",
                                 "Introduction to Data Science and Artificial Intelligence ",
                                 "Data Structure and Algorithm",
-                                "Software Engineering"];
+                                "Software Engineering",
+                                "Computer Communications",
+                                "Microprocessors"];
 
-export const cca = ["NTU EEE Club, Student Development Director",
-                    "NTU Indonesian Students Association, Information Technology Director",
+export const cca = ["PINTU XXIII (NTU Indonesian Students Association), President",
+                    "PINTU Orientation: Get Together Day 2024, Vice President (GL-Welfare)",
+                    "NTU EEE Club, Student Development Director (2022-2023)",
+                    "NTU Indonesian Students Association, Information Technology Director (2022-2024)",
                     "PINTU Orientation: Get Together Day 2023, Welfare Director",
                     "Welfare Services Club (Growth and Opportunities), Publicity Subcommittee",
                     "NTU Student Union, Design Subcommittee (2021-2022)",
@@ -13,7 +17,9 @@ export const cca = ["NTU EEE Club, Student Development Director",
 
 export const competitionUni = ["NTU-EEE Club: HackEEEthon 1.0",
                             "Shopee Code League 2022",
-                            "Shopee Product & Design Challenge 2022"];
+                            "Shopee Product & Design Challenge 2022",
+                            "PSA Code Sprint 2023",
+                            "GIC #CODETOIMPACT 2023"];
 
 export const highschool = ["90th Percentile of Cohort in 3 Academic Years",
                            "Honourable Mention Awardee, National Informatics Competition 2020"];

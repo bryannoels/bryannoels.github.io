@@ -6,25 +6,34 @@ function ProjectsItem(item, setClose){
   const data = item.item;
   return(
     <div className ="projects_item">
-      <div className ="projects_item_left">
-        <img src = {data.image} alt = {data.title} className ="projects_item_image"/>
+      <div className="projects_item_x" onClick={() => item.setClose()}>
+        ×
       </div>
-      <div className ="projects_item_right">
-        <div className = "projects_item_headline">{data.headline}</div>
-        <div className = "projects_item_type">{data.type}</div>
-        <div className = "projects_item_duration">{data.duration}</div>
-        <ul className = "projects_item_decription">
-          {data.description.map(line=>(
-            <li>{line}</li>
-          ))}
-        </ul>
-        <div className="projects_item_middle">
-          <a href={data.url} target="_blank" rel="noreferrer" className = "projects_item_link">
-            See project
-          </a>
+      <div className="projects_item_content">
+        <div className ="projects_item_left">
+          <img src = {data.image} alt = {data.title} className ="projects_item_image"/>
         </div>
-        <div className="projects_item_bottom">
-          <div className = "projects_item_close" onClick = {() => item.setClose()}>Close</div>
+        <div className ="projects_item_right">
+          <div className = "projects_item_headline">{data.headline}</div>
+          <div className = "projects_item_type">{data.type}</div>
+          <div className = "projects_item_duration">{data.duration}</div>
+          <ul className = "projects_item_decription">
+            {data.description.map(line=>(
+              <li>{line}</li>
+            ))}
+          </ul>
+          { data.url ?
+            (
+              <div className="projects_item_middle">
+              <a href={data.url} target="_blank" rel="noreferrer" className = "projects_item_link">
+                See project
+              </a>
+            </div>
+            ) : null
+          }
+          <div className="projects_item_bottom">
+            <div className = "projects_item_close" onClick = {() => item.setClose()}>Close</div>
+          </div>
         </div>
       </div>
     </div>

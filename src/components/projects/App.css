@@ -35,11 +35,11 @@
   object-fit: cover;
 }
 .project_title{
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
 }
 .project_type{
-  font-size: 20px;
+  font-size: 18px;
 }
 .project_duration{
   position: absolute;
@@ -60,6 +60,27 @@
   width: 80vw;
   border-radius: 20px;
   display: flex;
+  flex-direction: column;
+}
+.projects_item_x{
+  background-color: #FF0000;
+  color: #FFFFFF;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.projects_item_content{
+  height: calc(80vw - 50px);
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
 }
 .projects_item_left{
   width: 45%;
@@ -70,10 +91,14 @@
 .projects_item_right{
   width: 55%;
   padding-right: 5%;
+  padding-bottom: 20px;
+  overflow-y: auto;
+  
 }
 .projects_item_image{
   max-height: 80%;
   max-width: 80%;
+  border-radius: 30px;
 }
 .projects_item_headline{
   font-size: 30px;
@@ -110,6 +135,7 @@
   text-decoration: none;
   border-radius: 25px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .projects_item_link:hover{
   transform: scale(1.1);
@@ -130,6 +156,7 @@
   align-items: center;
   border-radius: 25px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .projects_item_close:hover{
   transform: scale(1.1);
@@ -139,7 +166,6 @@
     font-size: 15px;
   }
   .projects_item_bottom{
-    position: absolute;
     bottom: 15px;
     right: 15px;
   }
@@ -148,22 +174,31 @@
   }
 }
 @media screen and (max-width: 700px){
+  .projects_item_x{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
   .projects_item_decription{
     font-size: 15px;
   }
   .projects_item_left{
     display: none;
   }
+  .projects_item_content{
+    height: calc(80vh - 50px);
+  }
   .projects_item_right{
     width: 100%;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
   }
   .projects_item_middle{
     margin-top: 30px;
   }
   .projects_item_bottom{
-    position: absolute;
     bottom: 15px;
     right: 15px;
   }

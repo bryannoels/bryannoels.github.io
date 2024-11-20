@@ -1,5 +1,6 @@
 .education{
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -78,7 +79,7 @@
 }
 .front_content{
   width: 90%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,6 +112,10 @@
   align-items: center;
   transform: rotateY(180deg);
   overflow-y: auto;
+}
+.education_logo{
+  height: 200px;
+  margin-bottom: 20px;
 }
 .education_name{
   font-size: 24px;
@@ -186,7 +191,6 @@
 .prev_button, .next_button{
   font-size: 3em;
   background-color: rgba(0,0,0,0);
-  border: none;
   margin: 15px;
   transition: transform 0.5s;
 }
@@ -195,19 +199,17 @@
   visibility: hidden;
 }
 
-#pb2, #nb2{
-  font-size: 3em;
-  background-color: rgba(0,0,0,0);
-  border: none;
-  margin: 15px;
-  transition: transform 0.5s;
-}
 #pb2{
   visibility: hidden;
   z-index: 10;
 }
 
 @media screen and (max-width: 1250px){
+  
+}
+
+@media screen and (max-width: 1250px)
+{
   .book{
     width: 300px;
     height: 420px;
@@ -224,6 +226,11 @@
     margin-top: 21px;
     position: absolute;
     perspective: 1500px;
+  }
+  .front_content{
+    width: 90%;
+    padding: 5%;
+    padding-top:10%;
   }
   .front_cover_content{
     padding: 12px;
@@ -256,14 +263,45 @@
     line-height: 10px;
     margin-top: -10px;
   }
-}
-
-@media screen and (max-width: 700px)
-{
   .bigbook{
     display: none;
   }
   .smallbook{
     display: flex;
+    overflow-x: auto;
+  }
+  .small-button{
+    visibility: visible;
+    cursor: pointer;
+    font-size: 3em;
+    background-color: rgba(0,0,0,0);
+    margin: 15px;
+    transition: transform 0.5s;
+  }
+  .front_cover_title{
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .center-text{
+    text-align: center;
+  }
+  .education_logo{
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    
+  }
+  .education_name, .education_description{
+    width: 100%;
+    text-align: center;
+  }
+  #ntu_logo{
+    margin-top: -100px;
+  }
+  #st_louis_logo{
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }

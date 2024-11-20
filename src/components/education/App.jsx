@@ -115,10 +115,13 @@ function BigBook() {
           </div>
           <div className="back_page">
             <div className="back_content">
+              <img src="/images/education/NTU_Logo.png" alt="NTU Logo" className="education_logo"/>
               <div className = "education_name">NANYANG TECHNOLOGICAL UNIVERSITY</div>
               <div>
                 <div className = "education_description">Bachelor of Engineering (Information Engineering and Media)</div>
                 <div className = "education_description">Honours (Highest Distinction) (Expected)</div>
+                <br/>
+                <div className = "education_description">Dean's List Academic Year 2022/2023, 2023/2024</div>
               </div>
             </div>
           </div>
@@ -151,11 +154,15 @@ function BigBook() {
                 ))
               }
               </ol>
+              <br/>
               <div className = "education_item">Research (URECA programme) on Deep Learning and Pattern Recognition in Chess (2023)</div>
+              <br/>
+              <div className = "education_item">Final Year Project on Developing an Investment Web Portal with an English Interface (2024 - Present)</div>
             </div>
           </div>
           <div className="back_page">
             <div className="back_content">
+              <img src="/images/education/St_Louis_Logo.png" alt="St. Louis Logo" className="education_logo"/>
               <div className = "education_name">SMAK St. Louis 1 Surabaya</div>
               <div>
                 {
@@ -264,12 +271,12 @@ function SmallBook() {
   }
   return (
     <div className="education smallbook">
-      <button id = "pb2" onClick={prevPageS}>{prevSign}</button>
+      <div className="small-button" id = "pb2" onClick={prevPageS}>{prevSign}</div>
       <div className="book">
         <div id="cover1s" className="cover">
           <div className="front_cover">
               <div className="front_cover_content">
-                <h1>EDUCATION</h1>
+                <p className="front_cover_title">EDUCATION</p>
               </div>
           </div>
           <div className="back_cover">
@@ -280,10 +287,13 @@ function SmallBook() {
         <div id="page1" className="paper">
           <div className="front_page">
             <div className="front_content">
+              <img src="/images/education/NTU_Logo.png" alt="NTU Logo" className="education_logo" id = "ntu_logo"/>
               <div className = "education_name">NANYANG TECHNOLOGICAL UNIVERSITY</div>
                 <div>
                   <div className = "education_description">Bachelor of Engineering (Information Engineering and Media)</div>
                   <div className = "education_description">Honours (Highest Distinction) (Expected)</div>
+                  <br/>
+                  <div className = "education_description">Dean's List Academic Year 2022/2023, 2023/2024</div>
                 </div>
             </div>
           </div>
@@ -321,6 +331,8 @@ function SmallBook() {
               }
               </ol>
               <div className = "education_item">Research (URECA programme) on Deep Learning and Pattern Recognition in Chess (2023)</div>
+              <br/>
+              <div className = "education_item">Final Year Project on Developing an Investment Web Portal with an English Interface (2024 - Present)</div>
             </div>
           </div>
           <div className="back_page">
@@ -331,6 +343,7 @@ function SmallBook() {
         <div id="page3" className="paper">
           <div className="front_page">
             <div className="front_content">
+              <img src="/images/education/St_Louis_Logo.png" alt="St. Louis Logo" className="education_logo" id = "st_louis_logo"/>
               <div className = "education_name">SMAK St. Louis 1 Surabaya</div>
               <div>
                 {
@@ -375,7 +388,7 @@ function SmallBook() {
           </div>
         </div>
       </div>
-      <button id = "nb2" onClick={nextPageS}>{nextSign}</button>
+      <div className="small-button" id = "nb2" onClick={nextPageS}>{nextSign}</div>
     </div>
   );
 }
