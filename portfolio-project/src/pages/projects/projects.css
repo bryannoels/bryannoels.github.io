@@ -1,141 +1,161 @@
 .projects-page{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(0.7vw + 2vmin);
-    color: white;
-    font-family: monaco;
-    background-color: #000523;
-  }
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(0.7vw + 2vmin);
+  color: white;
+  font-family: monaco;
+  background-color: #000523;
+}
 
-  .projects-page-box{
-    border: solid white 0.5vmax;
-    height: 48vw;
-    width: 80%;
-  }
+.projects-page-box{
+  border: solid white 0.5vmax;
+  height: 48vw;
+  width: 80%;
+}
 
-  .projects-page-title{
-    font-size: 3.5vw;
-    padding-top: 4.5vw;
-    font-weight: bold;
-  }
+.projects-page-title{
+  font-size: 3.5vw;
+  padding-top: 4.5vw;
+  font-weight: bold;
+}
 
-  .project-cards{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: nowrap;
-      height: 30vw;
-      width: 100%;
-      margin-top: 4.5vh;
-      padding-left: 7vw;
-      padding-right: 7vw;
-  }
+.projects-page-slider{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+}
 
-  .project-card{
-    background-color: rgba(255,255,255,0.7);
-    height: 21vw;
-    width: 17vw;
-    margin-left:0px;
-    margin-right:0px;
-    padding-left:0px;
-    padding-right:0px;
-  }
+.project-cards{
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+  width: 100%;
+}
 
-  .project-card-image{
-    height: 14vw;
-    width: 14vw;
-    object-fit: contain;
-  }
+.project-card{
+  background-color: rgba(255,255,255,0.7);
+  height: 21vw;
+  width: 17vw;
+  border: solid red;
+  flex-shrink: 0; /* Prevent shrinking of individual cards */
+}
 
-  .project-card-description{
-    background-color: white;
-    top: 70%;
-    height: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: black;
-  }
+.project-card-image{
+  height: 14vw;
+  width: 14vw;
+  object-fit: contain;
+}
 
-  .project-card-text{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.4vw;
-  }
+.project-card-description{
+  background-color: white;
+  top: 70%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
 
-  /*projectsPhone*/
+.project-card-text{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4vw;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Mobile styles */
 .projects-page-phone{
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(0.7vw + 2vmin);
-    color: white;
-    font-family: monaco;
-    background-color: #000523;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(0.7vw + 2vmin);
+  color: white;
+  font-family: monaco;
+  background-color: #000523;
+}
 
-  }
-  
-  .projects-page-box-phone{
-    border: solid white 0.5vmax;
-    height: 100vw;
-    width: 80%;
-    margin-top: 10vh;
-  }
-  
-  .projects-page-title-phone{
-    font-size: 7vw;
-    padding-top: 4.5vw;
-    font-weight: bold;
-  }
-  
-  .project-cards-phone{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: nowrap;
-      height: 75vw;
-      width: 100%;
-      padding-left: 7vw;
-      padding-right: 7vw;
-  }
-  
-  .project-card-phone{
-    background-color: rgba(255,255,255,0.7);
-    height: 60vw;
-    width: 50vw;
-    margin-left:0px;
-    margin-right:0px;
-    padding-left:0px;
-    padding-right:0px;
-  }
-  
-  .project-card-image-phone{
-    height: 39vw;
-    width: 39vw;
-    object-fit: contain;
-  }
-  
-  .project-card-description-phone{
-    background-color: white;
-    top: 70%;
-    height: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: black;
-  }
-  
-  .project-card-text-phone{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 4.2vw;
-  }
+.projects-page-box-phone{
+  border: solid white 0.5vmax;
+  height: 100vw;
+  width: 80%;
+  margin-top: 10vh;
+}
+
+.projects-page-title-phone{
+  font-size: 7vw;
+  padding-top: 4.5vw;
+  font-weight: bold;
+}
+
+.project-cards-phone{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  height: 75vw;
+  width: 100%;
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
+
+.project-card-phone{
+  background-color: rgba(255,255,255,0.7);
+  height: 60vw;
+  width: 50vw;
+  margin-left:0px;
+  margin-right:0px;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.project-card-image-phone{
+  height: 39vw;
+  width: 39vw;
+  object-fit: contain;
+}
+
+.project-card-description-phone{
+  background-color: white;
+  top: 70%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.project-card-text-phone{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 4.2vw;
+}

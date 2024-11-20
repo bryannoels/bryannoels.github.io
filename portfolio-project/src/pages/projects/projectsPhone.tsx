@@ -5,7 +5,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './projects.css';
 
-export default function ProjectsPhone() {
+interface Project {
+  url: string;
+  image: string;
+  title: string;
+}
+
+const ProjectsPhone: React.FC = () => {
   const [offset, setOffset] = useState<number>(0);
   const vheight: number = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
 
@@ -21,7 +27,6 @@ export default function ProjectsPhone() {
     };
   }, []);
 
-  // Slick settings for mobile carousel
   const slickSettings = {
     dots: true,
     infinite: true,
@@ -30,6 +35,16 @@ export default function ProjectsPhone() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+        },
+      },
+    ],
   };
 
   return (
@@ -37,7 +52,7 @@ export default function ProjectsPhone() {
       <div className="projects-page-box-phone">
         <p className="projects-page-title-phone">Projects</p>
         <Slider {...slickSettings}>
-          {projectsInPhone.map((project, index) => (
+          {projectsInPhone.map((project: Project, index: number) => (
             <div key={index}>
               <div className="project-cards-phone">
                 <div className="project-card-phone">
@@ -57,4 +72,6 @@ export default function ProjectsPhone() {
       </div>
     </div>
   );
-}
+};
+
+export default ProjectsPhone;
